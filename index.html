@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Age Calculator App</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+       <div class="container">
+        <div class="container1">
+            <div class="inputs">
+                <div class="day">
+                    <span id="day-error">DAY</span>
+                    <input type="number" id="day" placeholder="DD" spellcheck="false" onkeyup="validateDay()" onkeydown="aprilValidation()">
+                    <span id="date-error">Must be a valid day</span>
+                    <span id="empty-error">This field is required</span>
+                    <span id = "day-validation">Must be a valid date</span>
+                </div>
+                <div class="month">
+                    <span id="month-error">MONTH</span>
+                    <input type="number" id="month" placeholder="MM" spellcheck="false" onkeyup="validateMonth()"  onkeydown="aprilValidation()">
+                    <span id="moon-error">Must be a valid month</span>
+                    <span id="empty-error1">This field is required</span> 
+                </div>
+                <div class="year">
+                    <span id="year-error">YEAR</span>
+                    <input type="number" id="year" placeholder="YYYY" spellcheck="false" onkeyup="validateYear()" >
+                    <span id="dozen-error">Must be in the past</span>
+                    <span id="empty-error2">This field is required</span>
+                </div>
+            </div>
+            <div class="line-icon">
+                <div class="line">
+                    <hr>
+                    <span id="arrow">
+                        <img src="assets/images/icon-arrow.svg">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="display-day">
+                <input type="display-box"  id="day-result" placeholder="_ _">
+                <span id="display-date">day(s)</span>
+            </div>
+            <div class="display-month">
+                <input type="display-box" id="month-result" placeholder="_ _">
+                <span id="display-month">month(s)</span>
+            </div>
+            <div class="display-year">
+                <input type="display-box"  id="year-result" placeholder="_ _">
+                <span id="display-year">year(s)</span>
+            </div>
+        </div>
+       </div>
+    </body>
+    <script src="calculator.js"></script>
+</html>

@@ -1,0 +1,239 @@
+*{
+    margin: auto;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+body{
+    background-color: hsl(0, 0%, 86%);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    flex-direction: column;
+    height: 400px;
+    width: 700px;
+    border-bottom-right-radius: 10rem;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.container1{
+    width: 600px;
+    height: 130px;
+}
+.container1 .inputs{
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 20px;
+}
+.inputs .day{
+    display: flex;
+    flex-direction: column;
+}
+#day{
+    width: 120px;
+    height: 30px;
+    color: hsl(0, 1%, 44%);
+    font-weight: bolder;
+    border-radius: 10px;
+}
+#day:hover{
+    cursor: pointer;
+    border-color: purple;
+}
+#day-error{
+    padding-right: 5rem;
+    padding-bottom: 5px;
+}
+#date-error{
+    font-size: smaller;
+    padding-top: 5px;
+    color: hsl(0, 100%, 67%);
+    display: none;
+}
+#day-validation{
+    font-size: smaller;
+    display: none;
+}
+#month-error{
+    padding-right: 5rem;
+    padding-bottom: 5px;
+
+}
+#moon-error{
+    font-size: smaller;
+    padding-top: 5px;
+    color: hsl(0, 100%, 67%);
+    display: none;
+    
+}
+#year-error{
+    padding-right: 5rem;
+    padding-bottom: 5px;
+}
+#dozen-error{
+    font-size: smaller;
+    padding-top: 5px;
+    color: hsl(0, 100%, 67%);
+    display: none;
+}
+.inputs .month{
+    display: flex;
+    flex-direction: column;
+}
+#month{
+    width:120px;
+    height: 30px;
+    color: hsl(0, 1%, 44%);
+    font-weight: bolder;
+    border-radius: 10px;
+}
+#month:hover{
+    cursor: pointer;
+    border-color: purple;
+}
+#month-error{
+    padding-bottom: 5px;
+    padding-right: 4rem;
+}
+.inputs .year{
+    display: flex;
+    flex-direction: column;
+}
+#year{
+    width:120px;
+    height: 30px;
+    color: hsl(0, 1%, 44%);
+    font-weight: bolder;
+    border-radius: 10px;
+}
+#year:hover{
+    cursor: pointer;
+    border-color: purple;
+}
+#year-error{
+    padding-right: 5rem;
+    padding-bottom: 5px;
+}
+#empty-error{
+    font-size: smaller;
+    display: none;
+}
+#empty-error1{
+    font-size: smaller;
+    display: none;
+}
+#empty-error2{
+    font-size: smaller;
+    display: none;
+}
+
+.line-icon .line{
+    display: flex;
+    margin-top: 2rem;
+}
+.line hr{
+   position: relative; 
+   background-color: black;
+   width: 100%;
+}
+#arrow{
+        float: right;
+        background-color:  hsl(259, 100%, 65%);
+        position: relative; 
+        border-radius: 50%;
+        padding: 10px;
+}
+#arrow:hover{
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+#arrow img{
+    height: 40px;
+    width: 50px;
+}
+.container .container2{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 40px;
+}
+#day-result{
+    width: 50px;
+    border: none;
+    color: hsl(259, 100%, 65%);
+    font-size:xx-large;
+    font-weight: bolder;
+}
+#month-result{
+    width: 50px;
+    border: none;
+    color: hsl(259, 100%, 65%);
+    font-size:xx-large;
+    font-weight: bolder;
+
+}
+#year-result{
+    width: 50px;
+    border: none;
+    color: hsl(259, 100%, 65%);
+    font-size:xx-large;
+    font-weight: bolder;
+}
+#display-date{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+#display-month{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+#display-year{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width:400px){
+   .container{
+    width: 400px;
+    height: 600px;
+   }
+   .container1{
+    display: flex;
+    width: fit-content;
+    padding-right: 3px;
+    padding-left: 3px;
+   }
+   .container1 .inputs{
+    display: flex;
+    gap: 0.5rem;
+   }
+    .container .container1{
+    display: flex;
+    flex-direction: column;
+   }
+   .container .container2{
+    display: flex;
+    flex-direction: column-reverse;
+    height: fit-content;
+}
+   .container2{
+    display: flex;
+    flex-direction: column;
+   }
+   #arrow{
+    margin-top: 4rem;
+   }
+   .line-icon .line{
+    display: flex;
+   }
+   .line hr{
+    display: none;
+    justify-content: center;
+    position: absolute; 
+    background-color: black;
+    width: 100%;
+   }
+};
